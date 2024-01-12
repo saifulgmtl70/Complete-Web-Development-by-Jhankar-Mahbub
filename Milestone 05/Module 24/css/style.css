@@ -1,0 +1,26 @@
+*::selection{
+    background-color: #1e1e4f;
+    color: #fff;
+}
+
+
+
+h1{
+    color: tomato;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li{
+    color: purple;
+    list-style-type:decimal;
+}
+
+.main{
+    background-color: cadetblue;
+    padding: 50px;
+    height: 100%;
+    width: auto;
+}

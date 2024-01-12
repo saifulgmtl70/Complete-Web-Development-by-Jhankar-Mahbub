@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Daisy UI and tailwinf link -->
+    <link rel="stylesheet" href="src/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/cdn.jsdelivr.net_npm_daisyui@3.3.1_dist_full.css">
+    <script src="src/cdn.tailwindcss.com_3.3.3"></script>
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'dark-moderate': '#B68C5A',
+                        'dark-03': '#707070',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        .font-garmond{
+            font-family: 'EB Garamond', serif;
+        }
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #header ul li a:hover{
+            background: none;
+        }
+
+        #header ul li a:focus{
+            background: none;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <!-- Header part started from here -->
+    <section id="header" class="lg:container lg:mx-auto px-5 lg:px-20 py-5">
+        <div class="navbar flex justify-between items-center bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-100 rounded-md w-96">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#">Servies</a></li>
+                        <li><a href="#">Cases</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="" href="inde.html">
+                    <img src="Images/logo2.png" alt="">
+                </a>
+            </div>
+
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.html" class="dark-03 text-base">Home</a></li>
+                    <li><a href="#" class="dark-03 text-base font-normal">Servies</a></li>
+                    <li><a href="#" class="dark-03 text-base font-normal">Cases</a></li>
+                    <li><a href="#" class="dark-03 text-base font-normal">Blog</a></li>
+                    <li><a href="#" class="dark-03 text-base font-normal">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+              <a class="btn bg-dark-moderate hover:bg-dark-moderate text-white rounded-md px-3 lg:px-5">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+    <!-- Header part ended here -->
+
+
+
+
+    <!-- Bannewr part started from here -->
+    <section id="banner" class="lg:container lg:mx-auto px-5 lg:px-20 py-10 lg:py-8">
+        <div class="hero min-h-max" style="background-image: url(Images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-lg">
+                    <h1 class="mb-7 font-garmond text-5xl font-bold mt-4">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-7 font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex flex-col lg:flex-row justify-center items-center gap-4 pb-10">
+                        <input type="search" placeholder="Search your services" class="h-full text-gray-800 py-3 px-3 focus:outline-none w-full lg:w-2/3 rounded-md">
+                        <button class="btn bg-dark-moderate hover:bg-dark-moderate border-none cursor-pointer text-white h-10 w-full lg:w-auto ms-2 rounded-md">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner part ended here -->
+
+
+
+    <!-- Practice part Started from here -->
+    <section class="lg:container lg:mx-auto px-5 lg:px-20 py-12 lg:py-8 mt-10">
+        <div class="text-center mb-8">
+            <h2 class="mb-5 font-garmond text-5xl font-bold">The Legal Practice Area</h2>
+            <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 mt-24">
+            <div class="text-center border-b-2 border-e-2 border-gray-100 px-8 hover:bg-gradient-to-b from-gray-200">
+                <img src="Images/business.png" class="mx-auto" alt="">
+                <h3 class="text-3xl font-garmond mb-4">Business Law</h3>
+                <p class="text-lg font-poppins mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href="#" ><img src="Images/Frame.png" class="mx-auto" alt=""></a>
+            </div>
+
+            <div class="text-center border-b-2 border-e-2 border-gray-100 p-8 hover:bg-gradient-to-b from-gray-200">
+                <img src="Images/criminal.png" class="mx-auto" alt="">
+                <h3 class="text-3xl font-garmond mb-4">Criminal Law</h3>
+                <p class="text-lg font-poppins mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href="#"><img src="Images/Frame.png" class="mx-auto" alt=""></a>
+            </div>
+
+            <div class="text-center border-b-2 border-gray-100 p-8 hover:bg-gradient-to-b from-gray-200">
+                <img src="Images/child.png" class="mx-auto" alt="">
+                <h3 class="text-3xl font-garmond mb-4">Child Support</h3>
+                <p class="text-lg font-poppins mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href="#"><img src="Images/Frame.png" class="mx-auto" alt=""></a>
+            </div>
+
+            <div  class="text-center  border-e-2 border-gray-100 p-8 hover:bg-gradient-to-b from-gray-200">
+                <img src="Images/education.png" class="mx-auto" alt="">
+                <h3 class="text-3xl font-garmond mb-4">Education Law</h3>
+                <p class="text-lg font-poppins mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href="#"><img src="Images/Frame.png" class="mx-auto" alt=""></a>
+            </div>
+
+            <div class="text-center border-e-2 border-gray-100 p-8 hover:bg-gradient-to-b from-gray-200">
+                <img src="Images/divorce.png" class="mx-auto" alt="">
+                <h3 class="text-3xl font-garmond mb-4">Divorce Law</h3>
+                <p class="text-lg font-poppins mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href="#"><img src="Images/Frame.png" class="mx-auto" alt=""></a>
+            </div>
+
+            <div class="text-center border-e-2 border-gray-100 p-8 hover:bg-gradient-to-b from-gray-200">
+                <img src="Images/tax.png" class="mx-auto" alt="">
+                <h3 class="text-3xl font-garmond mb-4">Tax Law</h3>
+                <p class="text-lg font-poppins mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <a href="#"><img src="Images/Frame.png" class="mx-auto" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Practice part ended here -->
+
+
+
+
+    <!-- Clients Review Section started from here -->
+    <!-- <section class="lg:container lg:mx-auto px-5 lg:px-20 py-12 lg:py-8 mt-10">
+        <div class="text-center mb-10">
+            <h2 class="mb-5 font-garmond text-5xl font-bold">The Legal Practice Area</h2>
+            <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active max-h-min">
+                    <img src="Images/slider-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Images/slider-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Images/slider-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section> -->
+
+
+    <!-- Clients Review Section ended here -->
+
+
+
+
+
+    <!-- FAQ Section started from here -->
+    <!-- <section class="lg:container lg:mx-auto px-5 lg:px-20 py-12 lg:py-8 mt-10">
+        <div class="text-center mb-10">
+            <h2 class="mb-5 font-garmond text-5xl font-bold">Frequently Asked Any Questions</h2>
+            <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row">
+            <div class="">
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" checked="checked" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Click to open this one and close others
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>hello</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Click to open this one and close others
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>hello</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                      <input type="radio" name="my-accordion-4" /> 
+                      <div class="collapse-title text-xl font-medium">
+                        Click to open this one and close others
+                      </div>
+                      <div class="collapse-content"> 
+                        <p>hello</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div>
+                <img src="Images/faq.png" class="h-64" alt="">
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- FAQ Section ended here -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

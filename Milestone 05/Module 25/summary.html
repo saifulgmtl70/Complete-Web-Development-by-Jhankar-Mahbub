@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+</head>
+<body>
+
+    <h1>Exploring Summary</h1>
+<!-- 
+    <button onclick="makeGreen()">Green</button>
+    <button onclick="makeYellow()">Yellow</button>
+    <button onclick="makeTomato()">Tomato</button> -->
+
+
+    <!-- <button id="makeGreen">Green</button>
+    <button id="makeYellow">Yellow</button>
+    <button id="makeTomato">Tomato</button> -->
+
+    <input type="email" name="" id="mailBox">
+    <button id="submit">Submit</button>
+    
+    <p></p>
+
+
+    <script>
+        // function makeGreen(){
+        //     document.body.style.backgroundColor = "green";
+        // }
+        // function makeYellow(){
+        //     document.body.style.backgroundColor = "yellow";
+        // }
+        // function makeTomato(){
+        //     document.body.style.backgroundColor = "tomato";
+        // }
+        // document.getElementById('makeGreen').addEventListener("click", function(){
+        //     document.body.style.backgroundColor = "green";
+        // })
+        // document.getElementById('makeYellow').addEventListener("click", function(){
+        //     document.body.style.backgroundColor = "yellow";
+        // })
+        // document.getElementById('makeTomato').addEventListener("click", function(){
+        //     document.body.style.backgroundColor = "tomato";
+        // })
+
+        document.getElementById("mailBox").addEventListener("keyup", function(event){
+            console.log(event.target.value);
+        })
+
+        const myButton = document.getElementById("submit").addEventListener("click", function(){
+            console.log("Hello");
+        })
+    </script>
+</body>
+</html>

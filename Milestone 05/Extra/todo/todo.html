@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="src/cdn.jsdelivr.net_npm_daisyui@3.3.1_dist_full.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/all.min.css">
+    <script src="src/cdn.tailwindcss.com_3.3.3"></script>
+</head>
+
+
+<body class="">
+    
+    <!-- To Do List -->
+    <section class="w-full min-h-screen bg-slate-200 mb-20 flex items-center justify-center">
+        <div class="bg-gray-300 w-5/12 h-auto px-20 py-12 shadow-xl">
+            <h2 class="text-center text-4xl font-bold text-gray-800 mb-6">To Do List</h2>
+            <input type="text" id="inpuField" class="block w-full bg-gray-50 rounded-md px-3 py-2 focus:outline-0 text-slate-900 font-semibold text-xl mb-5 tracking-wider" placeholder="Enter Name">
+
+            <ul class="list-image-[url(check.png)] mb-4" id="to_do_list">
+
+            </ul>
+ 
+            <!-- <div class="overflow-x-auto mb-5">
+                <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+                <thead class="ltr:text-left rtl:text-right">
+                    <tr>
+                    <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                        Name
+                    </th>
+                    <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                        Date of Birth
+                    </th>
+                    
+                    </tr>
+                </thead>
+            
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                    <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                        John Doe
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
+                    </tr>
+            
+                    <tr>
+                    <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                        Jane Doe
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-2 text-gray-700">04/11/1980</td>
+                    </tr>
+            
+                    <tr>
+                    <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                        Gary Barlow
+                    </td>
+                    <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
+
+                    </tr>
+                </tbody>
+                </table>
+            </div> -->
+
+            <button id="addBtn" class="btn w-full block spa leading-normal bg-rose-500 hover:bg-rose-600 border-0 rounded-md px-6 py-2 focus:outline-0 text-white font-semibold text-md tracking-widest">Add</button>
+        </div>
+
+    </section>
+
+    <script src="todo.js"></script>
+</body>
+</html>

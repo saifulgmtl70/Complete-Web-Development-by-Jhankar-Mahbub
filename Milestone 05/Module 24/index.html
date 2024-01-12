@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1>Welcome to DOM</h1>
+    </header>
+
+    <main id="main">
+        <section>
+            <h1>Smart Phone I Have</h1>
+            <ul id="phones">
+                <li>Vivo Y72 5G</li>
+                <li>OPPO F9</li>
+                <li>Samsung Galaxy A70</li>
+                <li>Huawei Y9</li>
+            </ul>
+        </section>
+
+        <section class="fruits_container">
+            <h1 id="fruits_title">Fruits I like</h1>
+            <ul>
+                <li class="fruits_name">Applce</li>
+                <li class="fruits_name">Dragon</li>
+                <li class="fruits_name">Strawberry</li>
+                <li class="fruits_name">Fine Apple</li>
+            </ul>
+        </section>
+
+        <section id="visit">
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li>Sundarban</li>
+                <li>patenga Sea beach</li>
+                <li>Naval Academy</li>
+                <li>Hill View</li>
+            </ul>
+        </section>
+    </main>
+
+    
+
+
+    
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/appen.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Button Example</title>
+</head>
+<body>
+    <p>Total Balance: <span id="totalBalance">179</span></p>
+    <button id="purchaseButton" disabled>Buy Now</button>
+
+    <script>
+        // Get references to the total balance element and the purchase button
+        const totalBalanceElement = document.getElementById("totalBalance");
+        const purchaseButton = document.getElementById("purchaseButton");
+
+        // Convert the total balance text to a number
+        const totalBalance = parseFloat(totalBalanceElement.textContent);
+
+        // Enable the purchase button if the total balance is greater than 200
+        if (totalBalance > 200) {
+            purchaseButton.removeAttribute("disabled");
+        }
+    </script>
+</body>
+</html>

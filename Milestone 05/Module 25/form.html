@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+    <style>
+        :root{
+            --main-bg:#e91e63;
+            }
+
+        .main-bg {
+            background: var(--main-bg) !important;
+        }
+
+        input:focus, button:focus {
+            border: 1px solid var(--main-bg) !important;
+            box-shadow: none !important;
+        }
+
+        .form-check-input:checked {
+            background-color: var(--main-bg) !important;
+            border-color: var(--main-bg) !important;
+        }
+
+        .card, .btn, input{
+            border-radius:0 !important;
+        }
+    </style> -->
+
+</head>
+<body>
+
+    <!-- <div class="container">
+        <div class="row justify-content-center align-items-center mt-5 mb-5">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card shadow">
+                <div class="card-title text-center border-bottom">
+                    <h2 class="p-3">Login</h2>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-4">
+                            <label for="username" class="form-label">Username/Email</label>
+                            <input type="email" class="form-control" id="mailBox" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passBox" />
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn text-light main-bg" id="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <p id="emailresult">Default Email</p>
+        <p id="passResult">Default Pasword</p>
+    </div> -->
+
+        <h1>Form Validate</h1>
+        <p id="emailresult">Default Email</p>
+        <p id="passResult">Default Pasword</p>
+
+        <input type="email" name="" id="mailBox">
+        <input type="password" name="" id="passBox">
+        <button id="submit">Login</button>
+      
+
+
+        <script>
+            document.getElementById("submit").addEventListener("click",function(){
+                const email = document.getElementById("mailBox");
+                const password = document.getElementById("passBox");
+                const emailResult = email.value;
+                const passresult = password.value;
+
+                
+                const showMail = document.getElementById("emailresult");
+                showMail.innerText = "Your Email is : " + emailResult;
+                const showPass = document.getElementById("passResult");
+                showPass.innerText = "Your result is: " + passresult;
+                email.value = '';
+                password.value = '';
+            });
+
+
+        </script>
+
+      
+
+
+
+      <!-- <script src="js/form.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> -->
+    
+</body>
+</html>

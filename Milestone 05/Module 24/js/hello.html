@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <style>
+        #applyButton {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Details</h2>
+    <p>Total Price: $<span id="totalPrice">0</span></p>
+    
+    <button onclick="calculateDiscount()">Calculate Discount</button>
+    <div id="discountSection" style="display: none;">
+        <input type="text" id="couponCode" placeholder="Enter Coupon Code">
+        <button onclick="applyDiscount()">Apply</button>
+    </div>
+    
+    <h2>Final Price</h2>
+    <p>Discounted Price: $<span id="discountedPrice">0</span></p>
+    <p>New Total: $<span id="newTotal">0</span></p>
+    
+    <script>
+        let totalPrice = 0;
+        let discountedPrice = 0;
+        
+        function calculateDiscount() {
+            totalPrice = parseFloat(prompt("Enter total price:"));
+            if (totalPrice >= 200) {
+                document.getElementById("applyButton").style.display = "block";
+            }
+            document.getElementById("totalPrice").textContent = totalPrice;
+            document.getElementById("discountSection").style.display = "block";
+        }
+        
+        function applyDiscount() {
+            const couponCode = document.getElementById("couponCode").value;
+            if (couponCode === "DISCOUNT20") {
+                discountedPrice = totalPrice * 0.2;
+                document.getElementById("discountedPrice").textContent = discountedPrice.toFixed(2);
+                const newTotal = totalPrice - discountedPrice;
+                document.getElementById("newTotal").textContent = newTotal.toFixed(2);
+            } else {
+                alert("Invalid coupon code. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
+

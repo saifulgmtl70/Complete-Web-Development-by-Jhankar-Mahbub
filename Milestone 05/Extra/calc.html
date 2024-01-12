@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Percentage Calculator</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-4 rounded shadow-md w-72">
+        <input id="display" class="mb-2 px-2 py-1 border rounded w-full" type="text" placeholder="0" readonly>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="col-span-2 bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="clearDisplay()">C</button>
+            <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="appendNumber('%')">%</button>
+            <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="appendNumber('/')">/</button>
+            
+            <!-- Rest of the calculator buttons -->
+            
+            <button class="col-span-2 bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="appendNumber('0')">0</button>
+            <button class="col-span-2 bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="appendNumber('1')">1</button>
+            <button class="col-span-2 bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="appendNumber('2')">2</button>
+            <button class="bg-gray-300 text-gray-700 hover:bg-gray-400 p-2 rounded" onclick="appendNumber('.')">.</button>
+            <button class="bg-green-400 text-white hover:bg-green-500 p-2 rounded col-span-2" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        let displayValue = "";
+
+        function updateDisplay() {
+            document.getElementById("display").value = displayValue;
+        }
+
+        function appendNumber(num) {
+            displayValue += num;
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            displayValue = "";
+            updateDisplay();
+        }
+
+        function calculate() {
+            try {
+                // Replace the percentage symbol with the multiplication factor for percentages
+                displayValue = displayValue.replace('%', '*0.01');
+                displayValue = eval(displayValue);
+            } catch (error) {
+                displayValue = "Error";
+            }
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+<body>
+
+    <h1>Please add your comment</h1>
+    <div id="para_Container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium ut facilis excepturi porro non maxime! Doloribus quis sequi molestias minus commodi perspiciatis quam, eveniet tenetur possimus atque sint assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium ut facilis excepturi porro non maxime! Doloribus quis sequi molestias minus commodi perspiciatis quam, eveniet tenetur possimus atque sint assumenda?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium ut facilis excepturi porro non maxime! Doloribus quis sequi molestias minus commodi perspiciatis quam, eveniet tenetur possimus atque sint assumenda?</p>
+       
+
+
+
+        
+
+    </div>
+
+
+    
+    <textarea class="form-control" name="" id="comment" cols="60" rows="6"></textarea>
+    <br>
+    <button id="post_btn">Post Comment</button>
+
+    <script>
+        document.getElementById("post_btn").addEventListener("click", function(){
+            const getComment = document.getElementById("comment");
+            const commentOutput = getComment.value;
+            const paragrapContainer = document.getElementById("para_Container");
+            const p = document.createElement("p");
+            p.innerText = commentOutput;
+            paragrapContainer.appendChild(p);
+            
+            getComment.value = '';
+        })
+    </script>
+    
+</body>
+</html>
